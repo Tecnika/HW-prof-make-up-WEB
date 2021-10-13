@@ -229,14 +229,6 @@ body {
     position: relative;
 }
 
-
-/* TODO как прявязать .products__overlay к .products__img?*/
-
-
-/* .products__img {
-    position: relative;
-} */
-
 .products__overlay {
     position: absolute;
     width: 100%;
@@ -253,9 +245,9 @@ body {
 /* TODO почему отключает флекс? */
 
 .products__button {
-    /* display: flex;
+    display: flex;
     align-items: center;
-    font-weight: 400;
+    /* font-weight: 400;
     text-align: left;
     border-radius: 0px;
     border: 1px solid var(--white);
