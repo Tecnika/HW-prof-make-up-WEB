@@ -238,33 +238,51 @@ body {
 } */
 
 .products__overlay {
-    width: 100%;
-    height: 420px;
-    /* height: 420px; */
-    background: rgba(0, 0, 0, 0.2);
     position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
     top: 0;
+    background: rgba(58, 56, 56, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 
 /* TODO почему отключает флекс? */
 
 .products__button {
-    display: flex;
+    /* display: flex;
     align-items: center;
     font-weight: 400;
-    /* line-height: 20px; */
     text-align: left;
     border-radius: 0px;
     border: 1px solid var(--white);
     color: var(--white);
     background-color: transparent;
-    padding: 20px 20px;
+    padding: 20px 20px;*/
     position: absolute;
-    /* top: 50%; */
-    top: 210px;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background: none;
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.products__position-link {
+    text-decoration: none;
+    border-bottom: 2px dashed DarkOrchid;
+}
+
+.products__position-info {
+    color: black;
 }
 
 .products__item:hover .products__button,
@@ -306,11 +324,11 @@ body {
 .products__item {
     background-color: var(--fons);
     width: 360px;
-    height: 580px;
+    /* height: 580px; */
     margin: 0 0 30px;
 }
 
-.products__position-link {
+.products__position-img {
     text-decoration: none;
     letter-spacing: 0em;
     text-align: left;
